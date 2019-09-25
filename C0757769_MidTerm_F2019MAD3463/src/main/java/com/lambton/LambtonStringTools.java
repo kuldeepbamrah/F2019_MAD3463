@@ -3,17 +3,18 @@ package com.lambton;
 
 public class LambtonStringTools {
 
-    public void reverse(String s)
+    public String reverse(String s)
     {
         char[] s1= s.toCharArray();
         int j= s1.length;
+        String reverse="";
 
 
         for(int i =j-1; i>=0; i--)
         {
-            System.out.print(s1[i]);
+           reverse+=s.charAt(i);
         }
-
+        return reverse;
     }
 
     public int binarytoDecimal(String s)
@@ -84,7 +85,6 @@ public class LambtonStringTools {
         {
             if(s1t.equals(parts[i]))
             {
-                parts[i].replace(s1t,s2t);
             }
             System.out.println(parts[i]);
         }
