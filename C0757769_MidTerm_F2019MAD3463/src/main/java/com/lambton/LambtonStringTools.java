@@ -11,8 +11,19 @@ public class LambtonStringTools {
         for(int i =j-1; i>=0; i--)
         {
             System.out.print(s1[i]);
+
         }
 
     }
+
+    public int binarytoDecimal(String s)
+    {
+        int i = Integer.parseInt(s,2);
+        return i;
+
+    }
+
+
+
 
 }
