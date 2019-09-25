@@ -85,6 +85,7 @@ public class LambtonStringTools {
         {
             if(s1t.equals(parts[i]))
             {
+                parts[i].replaceAll(s1t.s2t);
             }
             System.out.println(parts[i]);
         }
