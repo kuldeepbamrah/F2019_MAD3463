@@ -39,9 +39,26 @@ public class LambtonStringTools {
                     initials+=initial+".";
 
             }
-        String s1= initials.toString();
-        s1+=parts[parts.length-1].toString();
-        return(s1);
+        initials+=parts[parts.length-1];
+        return(initials);
+    }
+
+
+    public char mostFrequent(String s)
+    {
+        char[] s1= s.toCharArray();
+        int count=0;
+
+        for (int i=0;i<= s1.length;i++)
+        {
+            for(int j=1;j<=s1.length;j++)
+            {
+                if (s1[i]==s1[j])
+                {
+                    count++;
+                }
+            }
+        }
     }
 
 
