@@ -12,7 +12,6 @@ public class LambtonStringTools {
         for(int i =j-1; i>=0; i--)
         {
             System.out.print(s1[i]);
-
         }
 
     }
@@ -85,9 +84,11 @@ public class LambtonStringTools {
         {
             if(s1t.equals(parts[i]))
             {
-                parts[i]=s2t;
+                parts[i].replace(s1t,s2t);
             }
+            System.out.println(parts[i]);
         }
+
         String st = parts.toString();
         return st;
     }
