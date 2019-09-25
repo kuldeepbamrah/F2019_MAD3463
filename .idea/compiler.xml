@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="C0757769_MidTerm_F2019MAD3463.main" target="1.8" />
+      <module name="C0757769_MidTerm_F2019MAD3463.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
