@@ -83,11 +83,10 @@ public class LambtonStringTools {
 
         for(int i =0; i<parts.length;i++)
         {
-            System.out.println(parts[i]);
-           // if(s1t.equals(parts[i]))
-           // {
-             //   parts[i]=s2t;
-           // }
+            if(s1t.equals(parts[i]))
+            {
+                parts[i]=s2t;
+            }
         }
         String st = parts.toString();
         return st;
