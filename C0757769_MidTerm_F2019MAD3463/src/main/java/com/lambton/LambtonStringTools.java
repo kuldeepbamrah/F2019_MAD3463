@@ -48,18 +48,51 @@ public class LambtonStringTools {
     {
         char[] s1= s.toCharArray();
         int count=0;
+        int max=0;
+        char ctmp = 0;
 
-        for (int i=0;i<= s1.length;i++)
+        for (int i=0;i<= s1.length-1;i++)
         {
-            for(int j=1;j<=s1.length;j++)
+    
+            char ch= s.charAt(i);
+            for(int j=i+1;j<=s1.length-1;j++)
             {
-                if (s1[i]==s1[j])
+                char ch1= s.charAt(j);
+                if (ch==ch1)
                 {
                     count++;
                 }
             }
+            int temp;
+            if (count > max)
+            {
+               max=count;
+               ctmp=ch;
+            }
         }
+        return ctmp;
     }
+
+
+
+    public String replaceSubstring(String s, String s1, String s2)
+    {
+        String[] parts = s.toLowerCase().split(" ");
+        String s1t= s1.toLowerCase();
+        String s2t= s2.toLowerCase();
+
+        for(int i =0; i<parts.length;i++)
+        {
+            
+           // if(s1t.equals(parts[i]))
+           // {
+             //   parts[i]=s2t;
+           // }
+        }
+        String st = parts.toString();
+        return st;
+    }
+
 
 
 
