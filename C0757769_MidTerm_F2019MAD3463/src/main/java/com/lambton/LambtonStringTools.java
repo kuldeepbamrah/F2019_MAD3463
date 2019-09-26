@@ -75,23 +75,23 @@ public class LambtonStringTools {
 
 
 
-    public String replaceSubstring(String s, String s1, String s2)
+
+    public String replaceSubString(String s1, String s2, String s3)
     {
-        String[] parts = s.toLowerCase().split(" ");
-        String s1t= s1.toLowerCase();
-        String s2t= s2.toLowerCase();
+        String str = s1.toLowerCase();
+        String second = s2.toLowerCase();
+        String third =s3.toLowerCase();
 
-        for(int i =0; i<parts.length;i++)
-        {
-            if(s1t.equals(parts[i]))
-            {
-                parts[i].replaceAll(s1t.s2t);
-            }
-            System.out.println(parts[i]);
-        }
 
-        String st = parts.toString();
-        return st;
+     String[] arr = str.split(second);
+        StringBuilder output = new StringBuilder();
+        int i = 0;
+        for (i=0; i < arr.length - 1; i++)
+            output.append(arr[i]).append(third);
+        output.append(arr[i]);
+        if (str.substring(str.lastIndexOf(" ")).equalsIgnoreCase(" " + second))
+            output.append(third);
+        return output.toString();
     }
 
 
